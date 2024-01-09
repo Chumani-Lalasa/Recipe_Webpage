@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Playball', cursive;
+    overflow: auto;
+}
+#mainContainer1{
+    height: 500px;
+    background-repeat: no-repeat;
+    background-image: url('recipe/recipe18.jpg');
+    background-size: cover;
+    filter: brightness(80%);
+    box-shadow:10px 10px 10px 10px black;
+}
+#mainContainer2{
+    height: fit-content;
+    background-image:url('recipe/recipe10.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#navSection{
+    display: flex;
+    justify-content: space-between;
+}
+#navSection h1{
+    font-size: 50px;
+    color: #00f5d4;
+    font-weight:900;
+    text-shadow: 5px 5px 5px white;
+}
+#titleSection{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+#searchBar{
+    text-align: center;
+}
+#search{
+    height: 45px;
+    width: 300px;
+    border-radius: 35px;
+    text-align: center;
+    background-color:white;
+    border: none;
+    font-size: 20px;
+    box-shadow:  10px 10px 10px 10px rgba(12, 66, 227, 0.8);
+}
+#search:hover{
+    background-color: #f77f00;
+}
+#searchBtn{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow:  10px 10px 10px 10px rgba(12, 66, 227, 0.8);
+    border: none;
+}
+#searchBtn:hover{
+    background-color: #f77f00;
+}
+#description{
+    font-size: 35px;
+    color: white;
+    text-shadow: 5px 5px 5px #f72585;
+
+}
+#random{
+    margin-top: 20px;
+    text-align: center;
+    visibility:visible;
+}
+#category{
+    font-size: 25px;
+    background-color: #00f5d4;
+}
+#recipeName{
+    font-size: 20px;
+    color: white;
+    text-shadow: 5px 5px 5px #b308f1;
+}
+.defaultCategory{
+    font-size: 25px;
+    background-color: #00f5d4;
+    text-align: center;
+}
+.recipeMainContainer{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    visibility: visible;
+}
+.recipeContainer{
+    color: white;
+    text-shadow: 5px 5px 5px #b308f1;
+}
+.recipeContainer img{
+    height: 400px;
+    width: 400px;
+    cursor: pointer;
+}
+#recipeImage img{
+    height: 400px;
+    width: 400px;
+    cursor: pointer;
+}
+#category2{
+    font-size: 25px;
+    background-color: #00f5d4;
+    text-align: center;
+    display:none;
+}
+
+/* popup */
+.popup {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+.popup-content h2{
+    text-shadow: 2px 2px 2px #f72585;
+}
+  .popup-content {
+    height: fit-content;
+    width: 400px;
+    /* background-color:red; */
+    background-image: url('recipe/recipe15.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    color: white;
+    text-shadow: 2px 2px 2px cornflowerblue;
+    font-size: 30px;
+  }
+  
+  .close {
+    float: right;
+    cursor: pointer;
+    color: #f72585;
+    background-color: white;
+    box-shadow: 10px 10px 10px 10px #f72585;
+  }
+  
+  .close:hover {
+    color: red;
+  }
+ @media (max-width: 426px) { 
+    #mainContainer1 {
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+    }
+    #navSection {
+        flex-direction: column;
+        align-items: center; 
+    }
+    #navSection h1 {
+        font-size: 20px; 
+    }
+    #titleSection {
+        margin-top: 10px;
+        gap: 20px; 
+    }
+
+    #search {
+        width: 300px;
+        font-size: 16px; 
+    }
+
+    #searchBtn {
+        height: 30px; 
+        width: 30px; 
+        border-radius: 30px;
+    }
+    #description {
+        font-size: 25px; 
+    }
+    #random {
+        width: fit-content;
+        margin-top: 10px;
+    }
+
+    #category {
+        font-size: 20px; 
+    }
+
+    #recipeName {
+        font-size: 18px;
+    }
+
+    .defaultCategory {
+        font-size: 20px;
+    }
+
+
+
+    .recipeContainer {
+        font-size: 16px;
+    }
+}
+
