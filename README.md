@@ -5,13 +5,13 @@ Welcome to Recipe Webpage, where you can explore random recipes and search for y
 The Recipe Webpage is a dynamic web application that generates a random recipe each time the page is reloaded. It also allows users to search for specific recipes using a search feature powered by an external API. The website provides a seamless experience for discovering new dishes and accessing detailed ingredient lists.
 
 # Features
-**Random Recipe Generation**:
+## Random Recipe Generation:
 Upon page reload, a new random recipe is fetched and displayed.
-**Recipe Search**:
+## Recipe Search:
 Users can search for recipes by entering keywords or dish names.
-**Detailed Recipe Information**:
+## Detailed Recipe Information:
 Clicking on a recipe displays a popup with detailed ingredient lists.
-**Responsive Design**:
+## Responsive Design:
 The website is designed to be accessible and user-friendly across different devices and screen sizes.
 
 # Tech Stack:
